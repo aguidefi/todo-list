@@ -4,9 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To do List</title>
-  <link rel="stylesheet" href="/assets/styles.css">¿
+  <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
-
+  <section class="todo">
+    <div class="container">
+      <h1>Todo List</h1>
+      <hr>
+      <div id="add">
+        <p>Nueva tarea</p>
+        <input type="text" placeholder="Tarea por hacer...">
+        <button id="add-btn">Agregar</button>
+      </div>
+      <div id="resultados">
+        <div id="contador">
+          <p id="total">Total: <span id="valor-total">0</span></p>
+          <p id="realizadas">Realizadas: <span id="tareas-listas">0</span></p>
+        </div>
+        <div id="tareas"></div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
