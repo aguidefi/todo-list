@@ -5,25 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To do List</title>
   <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/js/index.js"></script>
 </head>
 <body>
-  <section class="todo">
-    <div class="container">
-      <h1>Todo List</h1>
-      <hr>
-      <div id="add">
-        <p>Nueva tarea</p>
-        <input type="text" placeholder="Tarea por hacer...">
+  <div class="container">
+    <h1>Todo List</h1>
+    <hr>
+    <div id="add">
+      <p>Nueva tarea</p>
+      <form id="addTask">
+        <input id="taskInput" type="text" placeholder="Tarea por hacer...">
         <button id="add-btn">Agregar</button>
-      </div>
-      <div id="resultados">
-        <div id="contador">
-          <p id="total">Total: <span id="valor-total">0</span></p>
-          <p id="realizadas">Realizadas: <span id="tareas-listas">0</span></p>
-        </div>
-        <div id="tareas"></div>
-      </div>
+      </form>
     </div>
-  </section>
+    <section>
+      <div id="results">
+        <div id="counter">
+          <ul id="total"></ul>
+          <ul id="ready"></ul>
+        </div>
+      </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>
+                ID
+              </th>
+              <th>
+                Tarea
+              </th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="taskTable"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
